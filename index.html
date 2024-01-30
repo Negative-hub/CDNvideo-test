@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CDNvideo</title>
+	<link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="title-main">
+			CDNvideo плеер
+		</h1>
+
+		<div class="video__wrapper">
+			<video id="video" class="video" controls></video>
+		</div>
+
+		<div class="media-stats__wrapper">
+			<h2>Счетчики проигрывания</h2>
+
+			<div class="media-stats">
+				<span id="current-media-position">
+					Текущая позиция в видео: 0:00
+				</span>
+				<span id="current-media-size">
+					Загружено: 0 КБ
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
